@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import CardContainer from "./components/CardsContainer";
 import Score from "./components/Score";
 import "./styles/App.css";
 
@@ -32,9 +33,11 @@ function App() {
         <Score text="Current Score" score={currentScore} />
         <Score text="Best Score" score={bestScore} />
       </div>
-      <button onClick={addOneToScore}>add 1 to score</button>
-      <button onClick={resetCurrentScore}>resetCurrentScore</button>
-      <button onClick={resetAllScores}>resetAllScores</button>
+      <CardContainer
+        addOneToScore={addOneToScore}
+        resetAllScores={resetAllScores}
+        resetCurrentScore={resetCurrentScore}
+      />
     </div>
   );
 }
