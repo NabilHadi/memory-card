@@ -7,3 +7,13 @@
   justify-content: space-around;
   align-items: center;
 }
+
+.CardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+}
