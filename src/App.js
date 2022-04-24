@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Memory Card</h1>
+      <h1 className="text-3xl font-bold underline">Memory Card</h1>
       <div className="score-container">
         <Score text="Current Score" score={currentScore} />
         <Score text="Best Score" score={bestScore} />
