@@ -8,12 +8,26 @@
   align-items: center;
 }
 
+.Score {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
 .CardsContainer {
+  padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 150px);
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 1rem;
 }
 
 .Card {
   display: flex;
   flex-direction: column;
+  border: 3px solid bisque;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.Card img {
+  border-radius: 10%;
 }
