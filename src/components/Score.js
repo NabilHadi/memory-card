@@ -1,7 +1,7 @@
 export default function Score({ text, score }) {
   return (
     <div className="Score">
-      {text}:{score}
+      {text}: {score}
     </div>
   );
 }
