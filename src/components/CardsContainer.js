@@ -1,14 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "./Card";
 import uniqid from "uniqid";
 
 import chickImg from "../karim-manjra-hQV3s7J6eM4-unsplash.jpg";
 
-export default function CardContainer({
-  addOneToScore,
-  resetCurrentScore,
-  resetAllScores,
-}) {
+export default function CardContainer({ addOneToScore, resetCurrentScore }) {
   const [cards, setCards] = useState([
     {
       id: uniqid(),
@@ -22,7 +18,44 @@ export default function CardContainer({
       name: "some random card1",
       img: chickImg,
     },
+    {
+      id: uniqid(),
+      isClicked: false,
+      name: "some random card2",
+      img: chickImg,
+    },
+    {
+      id: uniqid(),
+      isClicked: false,
+      name: "some random card3",
+      img: chickImg,
+    },
+    {
+      id: uniqid(),
+      isClicked: false,
+      name: "some random card4",
+      img: chickImg,
+    },
+    {
+      id: uniqid(),
+      isClicked: false,
+      name: "some random card5",
+      img: chickImg,
+    },
   ]);
+
+  const shuffleArray = () => {
+    setCards(
+      cards
+        .map((value) => ({ value, sort: Math.random() }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({ value }) => value)
+    );
+  };
+
+  useEffect(() => {
+    shuffleArray();
+  }, []);
 
   const handleCardClick = (id) => {
     const card = cards.find((c) => {
@@ -49,6 +82,7 @@ export default function CardContainer({
       );
       resetCurrentScore();
     }
+    shuffleArray();
   };
 
   return (

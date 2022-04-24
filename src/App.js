@@ -35,7 +35,6 @@ function App() {
       </div>
       <CardContainer
         addOneToScore={addOneToScore}
-        resetAllScores={resetAllScores}
         resetCurrentScore={resetCurrentScore}
       />
     </div>
