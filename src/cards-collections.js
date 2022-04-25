@@ -9,6 +9,7 @@ import {
   mdiBolt,
   mdiCar,
   mdiChemicalWeapon,
+  mdiFirefox,
   mdiGoogleChrome,
   mdiIceCream,
   mdiLanguageJava,
@@ -96,6 +97,12 @@ export default function getCardCollection() {
       isClicked: false,
       name: "Nail",
       img: <Icon path={mdiNail} />,
+    },
+    {
+      id: uniqid(),
+      isClicked: false,
+      name: "Firefox",
+      img: <Icon path={mdiFirefox} />,
     },
   ];
 }

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import getCardCollection from "./cards-collections";
 import CardContainer from "./components/CardsContainer";
 import Score from "./components/Score";
 import TutorialModal from "./components/TutorialModal";
@@ -6,6 +7,7 @@ import TutorialModal from "./components/TutorialModal";
 function App() {
   const [currentScore, setCurrentScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
+  const [maxScore, setMaxScore] = useState(getCardCollection().length);
   const [showModal, setShowModal] = useState(true);
 
   const addOneToScore = () => {
@@ -43,10 +45,13 @@ function App() {
         <div className="flex justify-around p-4 items-center">
           <Score text="Current Score" score={currentScore} />
           <Score text="Best Score" score={bestScore} />
+          <Score text="Max Score" score={maxScore} />
         </div>
         <CardContainer
           addOneToScore={addOneToScore}
           resetCurrentScore={resetCurrentScore}
+          resetAllScores={resetAllScores}
+          setMaxScore={setMaxScore}
         />
       </div>
     </>

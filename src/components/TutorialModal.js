@@ -11,7 +11,7 @@ export default function TutorialModal({ closeModalFun }) {
         <Icon path={mdiClose} size="2rem" />
       </div>
 
-      <div className="card bg-orange-400 font-poppins items-center">
+      <div className="card bg-orange-400 font-poppins items-center gap-3">
         <h1 className="text-3xl font-bold tracking-wide text-center font-permanentMarker">
           Memory Card Game
         </h1>
