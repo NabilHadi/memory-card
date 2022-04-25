@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/memoray-card/static/css/main.eccd4eec.css",
+    "main.js": "/memoray-card/static/js/main.85bb518b.js",
+    "static/media/Poppins-Light.ttf": "/memoray-card/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/Poppins-Medium.ttf": "/memoray-card/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "static/media/Poppins-Black.ttf": "/memoray-card/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
+    "static/media/PermanentMarker-Regular.ttf": "/memoray-card/static/media/PermanentMarker-Regular.109a10dca0508e41aa12.ttf",
+    "index.html": "/memoray-card/index.html",
+    "main.eccd4eec.css.map": "/memoray-card/static/css/main.eccd4eec.css.map",
+    "main.85bb518b.js.map": "/memoray-card/static/js/main.85bb518b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eccd4eec.css",
+    "static/js/main.85bb518b.js"
+  ]
+}
