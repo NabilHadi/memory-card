@@ -2,7 +2,7 @@
   "name": "memory-card",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://NabilHadi.github.io/memoray-card",
+  "homepage": "http://NabilHadi.github.io/memory-card",
   "dependencies": {
     "@mdi/js": "^6.6.96",
     "@mdi/react": "^1.6.0",
