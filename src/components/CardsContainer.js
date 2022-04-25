@@ -2,45 +2,103 @@ import { useEffect, useState } from "react";
 import Card from "./Card";
 import uniqid from "uniqid";
 
-import chickImg from "../karim-manjra-hQV3s7J6eM4-unsplash.jpg";
+import Icon from "@mdi/react";
+import {
+  mdiAbacus,
+  mdiAbTesting,
+  mdiAccessPoint,
+  mdiBabel,
+  mdiBolt,
+  mdiCar,
+  mdiChemicalWeapon,
+  mdiGoogleChrome,
+  mdiIceCream,
+  mdiLanguageJava,
+  mdiLanguageJavascript,
+  mdiNail,
+  mdiReact,
+  mdiWebpack,
+} from "@mdi/js";
 
 export default function CardContainer({ addOneToScore, resetCurrentScore }) {
   const [cards, setCards] = useState([
     {
       id: uniqid(),
       isClicked: false,
-      name: "some random card0",
-      img: chickImg,
+      name: "Car",
+      img: <Icon path={mdiCar} />,
     },
     {
       id: uniqid(),
       isClicked: false,
-      name: "some random card1",
-      img: chickImg,
+      name: "Bolt",
+      img: <Icon path={mdiBolt} />,
     },
     {
       id: uniqid(),
       isClicked: false,
-      name: "some random card2",
-      img: chickImg,
+      name: "Abacus",
+      img: <Icon path={mdiAbacus} />,
     },
     {
       id: uniqid(),
       isClicked: false,
-      name: "some random card3",
-      img: chickImg,
+      name: "Chemical Weapon",
+      img: <Icon path={mdiChemicalWeapon} />,
     },
     {
       id: uniqid(),
       isClicked: false,
-      name: "some random card4",
-      img: chickImg,
+      name: "Testing",
+      img: <Icon path={mdiAbTesting} />,
     },
     {
       id: uniqid(),
       isClicked: false,
-      name: "some random card5",
-      img: chickImg,
+      name: "Access Point",
+      img: <Icon path={mdiAccessPoint} />,
+    },
+    {
+      id: uniqid(),
+      isClicked: false,
+      name: "Babel",
+      img: <Icon path={mdiBabel} />,
+    },
+    {
+      id: uniqid(),
+      isClicked: false,
+      name: "Webpack",
+      img: <Icon path={mdiWebpack} />,
+    },
+    {
+      id: uniqid(),
+      isClicked: false,
+      name: "Javascript",
+      img: <Icon path={mdiLanguageJavascript} />,
+    },
+    {
+      id: uniqid(),
+      isClicked: false,
+      name: "Java",
+      img: <Icon path={mdiLanguageJava} />,
+    },
+    {
+      id: uniqid(),
+      isClicked: false,
+      name: "Google Chrome",
+      img: <Icon path={mdiGoogleChrome} />,
+    },
+    {
+      id: uniqid(),
+      isClicked: false,
+      name: "Ice Cream",
+      img: <Icon path={mdiIceCream} />,
+    },
+    {
+      id: uniqid(),
+      isClicked: false,
+      name: "Nail",
+      img: <Icon path={mdiNail} />,
     },
   ]);
 
