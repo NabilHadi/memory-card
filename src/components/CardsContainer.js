@@ -55,6 +55,7 @@ export default function CardContainer({ addOneToScore, resetCurrentScore }) {
 
   useEffect(() => {
     shuffleArray();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleCardClick = (id) => {
@@ -86,7 +87,7 @@ export default function CardContainer({ addOneToScore, resetCurrentScore }) {
   };
 
   return (
-    <div className="CardsContainer">
+    <div className=" p-4  grid gap-4 grid-cols-[repeat(auto-fit,minmax(200px,1fr))]">
       {cards.map((card) => {
         return (
           <Card

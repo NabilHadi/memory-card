@@ -1,6 +1,6 @@
 export default function Score({ text, score }) {
   return (
-    <div className="Score">
+    <div className=" font-medium text-lg">
       {text}: {score}
     </div>
   );
