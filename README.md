@@ -2,7 +2,7 @@
 
 ## Live link
 
-https://nabilhad.me/memory-card/
+https://nabilhadi.github.io/memory-card/
 
 ## Preview
 
